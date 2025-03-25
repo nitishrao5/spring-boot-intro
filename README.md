@@ -26,3 +26,17 @@
 | **Logging & Monitoring** | Reduce logging, use Actuator, enable tracing |
 | **Deployment** | Docker, Kubernetes scaling, HPA |
 | **Concurrency** | Tomcat thread pool tuning, ExecutorService |
+
+### **Different Scopes of Spring Beans**
+
+In Spring, a **bean scope** defines the lifecycle and visibility of a bean within the Spring container. Spring provides **six** types of bean scopes:
+
+| Scope | Description | Usage |
+|--------|------------|--------|
+| **singleton** | A single instance per Spring container (default scope) | Shared across all requests |
+| **prototype** | A new instance is created every time it is requested | Useful for stateful beans |
+| **request** | A new bean instance is created for each HTTP request | Web applications |
+| **session** | A new bean instance is created for each HTTP session | Session-based user data |
+| **application** | A single instance is shared across the entire application | Application-wide storage |
+| **websocket** | A new bean instance is created for each WebSocket session | WebSocket communication |
+
