@@ -1,5 +1,3 @@
-
-
 ## **unit testing**
 | Testing Type        | Tools Used          | Purpose |
 |---------------------|--------------------|---------|
@@ -7,9 +5,6 @@
 | **Integration Test** | `TestRestTemplate`, `MockMvc` | Tests **multiple layers** (Controller + Service + DB) |
 | **Database Test**   | `H2`, `Testcontainers` | Tests **repository layer** with an actual DB |
 | **E2E Test**        | `RestAssured`, `Postman` | Simulates real HTTP requests |
-
-
-
 
 ## **Acutator**
 | Feature | Configuration |
